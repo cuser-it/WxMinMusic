@@ -16,13 +16,41 @@
 
 ## 📱 功能特色
 ### 页面展示
-![音乐小程序1](https://github.com/user-attachments/assets/01b0ee00-0950-42b2-8471-00c7f3a9713f)
-![音乐小程序2](https://github.com/user-attachments/assets/b3c2dfbb-2467-46bf-bf9c-e6834e0be5c0)
-![音乐小程序3](https://github.com/user-attachments/assets/2fdff7fd-e7c8-4222-895e-39d672060647)
-![音乐小程序4](https://github.com/user-attachments/assets/ccdb2167-5711-4b8d-9410-1f0d99280822)
-<img width="502" height="969" alt="image" src="https://github.com/user-attachments/assets/fc429041-fd9e-4061-94c8-249c6b1625c6" />
-<img width="502" height="969" alt="image" src="https://github.com/user-attachments/assets/75ac91a6-2d81-4cde-a541-c39103acef5d" />
-![Uploading image.png…]()
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/01b0ee00-0950-42b2-8471-00c7f3a9713f" width="250"/>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/b3c2dfbb-2467-46bf-bf9c-e6834e0be5c0" width="250"/>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/2fdff7fd-e7c8-4222-895e-39d672060647" width="250"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/ccdb2167-5711-4b8d-9410-1f0d99280822" width="250"/>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/fc429041-fd9e-4061-94c8-249c6b1625c6" width="250"/>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/75ac91a6-2d81-4cde-a541-c39103acef5d" width="250"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/b4c08cbc-ee05-440f-adda-f432be0d65f1" width="250"/>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+
 
 ### 🎶 音乐发现
 - **轮播推荐**：首页精美轮播图展示热门音乐内容
