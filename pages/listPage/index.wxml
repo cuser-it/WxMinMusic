@@ -1,0 +1,83 @@
+<import src="index.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+  <!-- 歌单页面 -->
+  <view class="fa_BOX">
+    <view class="fa_box1">
+      <view class="songimg_box">
+        <view class="img_box">
+          <image class="img" src="/img/网易云音乐2.png" mode="aspectFill" />
+          <view class="Play_Count">
+            <van-icon name="play" />{{11}}
+          </view>
+        </view>
+        <view class="text">
+          <view>
+            {{'歌单名字'}}
+          </view>
+          <view class="s1">
+            <image style="width: 30rpx;height: 30rpx;" src="/img/网易云音乐2.png" mode="aspectFill" />
+            <text style="padding: 4rpx;">{{12345}}</text>
+            <van-icon name="arrow" />
+          </view>
+        </view>
+
+
+      </view>
+      <view class="fa_text">
+        <view class="textVal">
+          <!-- 判断为空返回编辑信息 -->
+          编辑信息健康和编辑信息健康和编辑
+        </view>
+        <view class="icon">
+          <van-icon name="arrow" />
+        </view>
+      </view>
+      <view class="icon_cont">
+        <view class="icon_box">
+          <van-icon name="share" />分享
+        </view>
+        <view class="icon_box">
+          <van-icon name="chat" />评论
+        </view>
+        <view class="icon_box">
+          <van-icon name="star" />收藏
+        </view>
+      </view>
+
+    </view>
+    <image src="/img/网易云音乐2.png" mode="aspectFit" style="width: 100%;filter: blur(24rpx);background: rgba(0, 0, 0, 0.384);position: absolute;margin: -360rpx 0rpx 0rpx -20rpx;z-index: -1;" />
+  </view>
+  <view class="fa_box2">
+    <view class="top_box">
+      <view class="icons">
+        <van-icon class="icon" name="play-circle" />
+        <text class="text">全部播放</text>({{'625'}})
+      </view>
+    </view>
+
+    <view class="song_List" wx:for="{{['听悲伤的情歌4','病态2','丑八怪3','就让这大雨全部落下','病态2','丑八怪1','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下']}}" bind:tap="ck1" data-id="{{index}}" wx:key="index">
+      <view class="r_box">
+        <view class="oneList">
+          {{index+1}}
+        </view>
+        <view class="list_neme">
+          <view class="song_name">
+            {{item}}
+          </view>
+          <view class="singer">
+            <van-icon style="padding: 0rpx 6rpx;" wx:if="{{1==1}}" color='red' name="like" />
+            <text wx:if="{{1==1}}" class="s1">原唱</text>
+            <text class="ss1">超清母带</text>
+            <text class="s2" wx:for="{{1}}" wx:key="index">张杰<text wx:if="{{index!=0}}">/</text></text>
+            <text class="s3">-{{'简短的介绍'}}</text>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- Global Music Player -->
+  <global-player />
+</view>

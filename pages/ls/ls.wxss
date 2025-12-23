@@ -1,0 +1,2 @@
+/* pages/ls/ls.wxss */
+@import "./ls.skeleton.wxss";

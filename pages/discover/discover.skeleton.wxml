@@ -1,0 +1,140 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/10/21下午4:25:49
+使用方法：
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\discover\discover.wxml 引入模板
+
+```
+<import src="discover.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\discover\discover.wxss 中引入样式
+```
+@import "./discover.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="search_box sk-image">
+      <navigator>
+        <view class="search_box_input sk-transparent sk-image">
+          <view is="miniprogram_npm/@vant/weapp/icon/index">
+            <view class="van-icon icon-index--van-icon van-icon-search icon-index--van-icon-search sk-pseudo sk-pseudo-circle" style="true"></view>
+          </view>方大同 回留
+        </view>
+      </navigator>
+    </view>
+    <view class="swiper">
+      <swiper autoplay="false" circular="true" snap-to-edge="true" duration="500" indicator-active-color="#ffffff" indicator-color="#e2e2e2ce" current="0">
+        <swiper-item class="s_Child" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+          <image class="s_img sk-image" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item class="s_Child" style="position: absolute; width: 100%; height: 100%; transform: translate(-300%, 0px) translateZ(0px);">
+          <image class="s_img sk-image" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item class="s_Child" style="position: absolute; width: 100%; height: 100%; transform: translate(-200%, 0px) translateZ(0px);">
+          <image class="s_img sk-image" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item class="s_Child" style="position: absolute; width: 100%; height: 100%; transform: translate(-100%, 0px) translateZ(0px);">
+          <image class="s_img sk-image" mode="aspectFill"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="Home_page_icon"></view>
+    <view class="Recommended_playlist">
+      <view class="Recommended_text sk-transparent">
+        推荐歌单
+        <view is="miniprogram_npm/@vant/weapp/icon/index">
+          <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="true"></view>
+        </view>
+      </view>
+      <scroll-view enhanced="true" scroll-x="true" style="width: 95vw; margin: 0 auto;">
+        <view class="Recommended_list">
+          <view class="song_list" data-musicid="2026321566">
+            <view class="box1" style="font-size: 12px;">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-bookmark icon-index--van-icon-bookmark sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>
+            </view>
+            <image class="song_img sk-image" mode="aspectFill"></image>
+            <view class="song_text sk-transparent sk-text-14-2857-129 sk-text">少年，这是你向往的江湖吗？
+            </view>
+          </view>
+          <view class="song_list" data-musicid="2238597343">
+            <view class="box1 sk-transparent">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>13.4万
+            </view>
+            <view class="box2">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>
+            </view>
+            <image class="song_img sk-image" mode="aspectFill"></image>
+            <view class="song_text sk-transparent sk-text-14-2857-697 sk-text">我辈剑客行事，天地无拘束
+            </view>
+          </view>
+          <view class="song_list" data-musicid="9211485821">
+            <view class="box1 sk-transparent">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>38.5万
+            </view>
+            <view class="box2">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>
+            </view>
+            <image class="song_img sk-image" mode="aspectFill"></image>
+            <view class="song_text sk-transparent sk-text-14-2857-387 sk-text">经典老歌300首大全 | 回忆杀80，90后的最爱
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/notice-bar/index">
+      <view class=" van-notice-bar index--van-notice-bar" style="color:#FEFDFB;background:#E7D3FB">
+        <view class="van-notice-bar__wrap index--van-notice-bar__wrap">
+          <view class="van-notice-bar__content index--van-notice-bar__content sk-transparent sk-text--20-0000-409 sk-text" style=";transition:7833.333333333333ms linear 1ms;transform:translateX(-182px);transition-property:transform;transform-origin:50% 50% 0;-webkit-transition:7833.333333333333ms linear 1ms;-webkit-transform:translateX(-182px);-webkit-transition-property:transform;-webkit-transform-origin:50% 50% 0">
+            音乐，是沉默时最美的对话。
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hit_song">
+      <view class="hit_songName">
+        <view style="font-weight: bold;font-size: 14px;margin: 0px 8px;" class="sk-transparent">
+          推荐音乐
+          <view is="miniprogram_npm/@vant/weapp/icon/index">
+            <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="true"></view>
+          </view>
+        </view>
+      </view>
+      <swiper next-margin="30rpx" style="height: 179px;" current="0" autoplay="false">
+        <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+          <view class="list_songs">
+            <view class="songs" data-musicid="2637558926">
+              <view class="songs_l">
+                <image class="songs_img sk-image" mode="aspectFill"></image>
+                <view class="songs_name">
+                  <view class="s_name sk-transparent sk-text-28-0000-10 sk-text">APT.</view>
+                  <view class="s_name2 sk-transparent sk-text-30-0000-224 sk-text">ROSÉ</view>
+                </view>
+              </view>
+              <view class="songs_r">
+                <view class="s1">
+                  <view is="miniprogram_npm/@vant/weapp/icon/index">
+                    <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</template>

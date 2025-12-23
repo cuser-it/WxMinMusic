@@ -1,0 +1,203 @@
+@import "./discover.skeleton.wxss";
+page {
+  background-color: #FFFFFF;
+  --notice-bar-height: 40rpx;
+  --notice-bar-line-height: 24rpx;
+}
+page .search_box {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fcdbf6, #ffffff);
+  height: 220rpx;
+}
+page .search_box .search_box_input {
+  border: 1rpx solid #ebcae6;
+  margin-top: 20rpx;
+  padding: 0px 20rpx;
+  line-height: 60rpx;
+  color: #707070;
+  overflow: hidden;
+  height: 60rpx;
+  width: 90vw;
+  border-radius: 50rpx;
+  background: linear-gradient(to right, #d2d4ff, #ffd2f6);
+}
+page .swiper {
+  width: 95vw;
+  height: 280rpx;
+  margin: -115rpx auto;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+page .swiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+page .swiper .s_Child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+page .swiper .s_Child .s_img {
+  width: 100%;
+  height: 100%;
+}
+page .swiper .s_Child .s_text {
+  position: absolute;
+  bottom: 12rpx;
+  right: 6rpx;
+  width: 90rpx;
+  text-align: center;
+  line-height: 30rpx;
+  height: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  color: #707070;
+  font-size: 20rpx;
+}
+page .Home_page_icon {
+  width: 95vw;
+  height: 00rpx;
+  margin: 10rpx auto;
+  margin-top: 120rpx;
+  display: flex;
+}
+page .Home_page_icon .home_icon {
+  width: 20%;
+  height: 140rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+page .Home_page_icon .home_icon .icon_img {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #D5544D;
+  background: linear-gradient(to right, #D5544D, #D4726C);
+  border-radius: 20rpx;
+  background-size: cover;
+}
+page .Home_page_icon .home_icon .icon_text {
+  color: #707070;
+  font-size: 24rpx;
+  margin: 10px;
+}
+page .Recommended_playlist {
+  background-color: white;
+  border-radius: 15rpx;
+  margin: 20rpx;
+}
+page .Recommended_playlist .Recommended_text {
+  font-weight: bold;
+  font-size: 34rpx;
+  margin: 0rpx 20rpx;
+  padding: 10rpx 0rpx;
+}
+page .Recommended_playlist .Recommended_list {
+  display: flex;
+  margin: 0rpx auto;
+  padding: 0rpx 20rpx;
+}
+page .Recommended_playlist .Recommended_list .song_list {
+  height: 320rpx;
+  width: 30vw;
+  position: relative;
+  margin: 10rpx 10rpx 0rpx 0rpx;
+}
+page .Recommended_playlist .Recommended_list .song_list .box1 {
+  font-weight: 900;
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  color: white;
+  font-size: 20rpx;
+}
+page .Recommended_playlist .Recommended_list .song_list .box2 {
+  position: absolute;
+  bottom: 100rpx;
+  right: 10rpx;
+  color: white;
+  font-size: 35rpx;
+}
+page .Recommended_playlist .Recommended_list .song_list .song_img {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 20rpx;
+}
+page .Recommended_playlist .Recommended_list .song_list .song_text {
+  width: 30vw;
+  font-size: 24rpx;
+  color: #1d1e24;
+  white-space: normal;
+}
+page .Recommended_playlist .Recommended_list .song_list:not(:first-of-type) {
+  margin: 10rpx 10rpx 0rpx 10rpx;
+}
+page .hit_song {
+  width: 95vw;
+  margin: 0 auto;
+  height: 500rpx;
+}
+page .hit_song .hit_songName {
+  font-size: 32rpx;
+  font-weight: bold;
+  display: flex;
+  padding: 20rpx 0rpx;
+}
+page .hit_song .hit_songName .song_log {
+  width: 80rpx;
+  font-size: 22rpx;
+  padding: 6rpx;
+  background-color: #EBECF0;
+  border-radius: 15rpx;
+}
+page .hit_song .list_songs {
+  display: flex;
+  flex-wrap: wrap;
+}
+page .hit_song .list_songs .songs {
+  width: 100%;
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+page .hit_song .list_songs .songs .songs_l {
+  display: flex;
+}
+page .hit_song .list_songs .songs .songs_l .songs_img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 15rpx;
+}
+page .hit_song .list_songs .songs .songs_l .songs_name {
+  width: 400rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+page .hit_song .list_songs .songs .songs_l .songs_name .s_name {
+  width: 100%;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+page .hit_song .list_songs .songs .songs_l .songs_name .s_name2 {
+  width: 100%;
+  font-size: 24rpx;
+}
+page .hit_song .list_songs .songs .songs_r {
+  padding: 40rpx;
+  color: #c5c5c5;
+  font-size: 20rpx;
+}
+page .hit_song .list_songs .songs .songs_r .s1 {
+  padding: 2rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #c5c5c5;
+}

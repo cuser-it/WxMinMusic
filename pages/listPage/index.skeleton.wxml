@@ -1,0 +1,262 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/10/22下午1:12:38
+使用方法：
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\listPage\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\listPage\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="fa_BOX">
+      <view class="fa_box1">
+        <view class="songimg_box">
+          <view class="img_box">
+            <image class="img sk-image" mode="aspectFill"></image>
+            <view class="Play_Count sk-transparent">
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>11
+            </view>
+          </view>
+          <view class="text">
+            <view class="sk-transparent sk-text-14-2857-106 sk-text">
+              歌单名字
+            </view>
+            <view class="s1">
+              <image mode="aspectFill" style="width: 16px;height: 16px;" class="sk-image"></image>
+              <text style="padding: 2px;" class="sk-transparent sk-text-14-2857-904 sk-text">12345</text>
+              <view is="miniprogram_npm/@vant/weapp/icon/index">
+                <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="fa_text">
+          <view class="textVal sk-transparent sk-image">
+            编辑信息健康和编辑信息健康和编辑
+          </view>
+          <view class="icon">
+            <view is="miniprogram_npm/@vant/weapp/icon/index">
+              <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>
+          </view>
+        </view>
+        <view class="icon_cont">
+          <view class="icon_box sk-transparent">
+            <view is="miniprogram_npm/@vant/weapp/icon/index">
+              <view class="van-icon icon-index--van-icon van-icon-share icon-index--van-icon-share sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>分享
+          </view>
+          <view class="icon_box sk-transparent">
+            <view is="miniprogram_npm/@vant/weapp/icon/index">
+              <view class="van-icon icon-index--van-icon van-icon-chat icon-index--van-icon-chat sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>评论
+          </view>
+          <view class="icon_box sk-transparent">
+            <view is="miniprogram_npm/@vant/weapp/icon/index">
+              <view class="van-icon icon-index--van-icon van-icon-star icon-index--van-icon-star sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>收藏
+          </view>
+        </view>
+      </view>
+      <image mode="aspectFit" style="width: 100%;filter: blur(13px);background: rgba(0, 0, 0, 0.384);position: absolute;margin: -198px 0px 0px -11px;z-index: -1;" class="sk-image"></image>
+    </view>
+    <view class="fa_box2">
+      <view class="top_box">
+        <view class="icons sk-transparent">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="icon">
+            <view class="van-icon icon-index--van-icon van-icon-play-circle icon-index--van-icon-play-circle sk-pseudo sk-pseudo-circle" style="true"></view>
+          </view>
+          <text class="text sk-transparent sk-text-14-2857-443 sk-text">全部播放</text>(625)
+        </view>
+      </view>
+      <view class="song_List" data-id="0">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-910 sk-text" style="background-position-x: 50%;">
+            1
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-725 sk-text">
+              听悲伤的情歌4
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-447 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-573 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-947 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-700 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="1">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-706 sk-text" style="background-position-x: 50%;">
+            2
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-903 sk-text">
+              病态2
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-720 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-28 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-339 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-33 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="2">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-346 sk-text" style="background-position-x: 50%;">
+            3
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-232 sk-text">
+              丑八怪3
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-571 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-17 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-506 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-900 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="3">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-75 sk-text" style="background-position-x: 50%;">
+            4
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-876 sk-text">
+              就让这大雨全部落下
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-429 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-163 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-311 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-909 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="4">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-87 sk-text" style="background-position-x: 50%;">
+            5
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-77 sk-text">
+              病态2
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-178 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-902 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-24 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-694 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="5">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-330 sk-text" style="background-position-x: 50%;">
+            6
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-304 sk-text">
+              丑八怪1
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-355 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-498 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-326 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-470 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="6">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-418 sk-text" style="background-position-x: 50%;">
+            7
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-322 sk-text">
+              就让这大雨全部落下
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-55 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-406 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-63 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-217 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="7">
+        <view class="r_box">
+          <view class="oneList sk-transparent sk-text-14-2857-650 sk-text" style="background-position-x: 50%;">
+            8
+          </view>
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-320 sk-text">
+              病态
+            </view>
+            <view class="singer">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 0px 3px;">
+                <view class="van-icon icon-index--van-icon van-icon-like icon-index--van-icon-like sk-pseudo sk-pseudo-circle" style="color:red"></view>
+              </view>
+              <text class="s1 sk-transparent sk-text-14-2857-458 sk-text">原唱</text>
+              <text class="ss1 sk-transparent sk-text-14-2857-936 sk-text">超清母带</text>
+              <text class="s2 sk-transparent sk-text-14-2857-667 sk-text">张杰</text>
+              <text class="s3 sk-transparent sk-text-14-2857-163 sk-text">-简短的介绍</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="song_List" data-id="8">
+        <view class="r_box">
+          <view class="list_neme">
+            <view class="song_name sk-transparent sk-text-14-2857-170 sk-text">
+              丑八怪
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

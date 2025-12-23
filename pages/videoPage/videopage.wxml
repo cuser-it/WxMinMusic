@@ -1,0 +1,45 @@
+<import src="videopage.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}"/>
+<!--pages/main-video/mian-video.wxml-->
+<view wx:else>
+  <van-tabs swipeable color="#D05847">
+    <van-tab title="推荐">
+      <view class="video-list">
+        <block wx:for="{{videoList}}" wx:key="id">
+          <video-item class="item" itemData="{{item}}" />
+        </block>
+      </view>
+    </van-tab>
+    <van-tab title="港台">
+      <view class="video-list">
+        <block wx:for="{{RTHKVideoList}}" wx:key="id">
+          <video-item class="item" itemData="{{item}}" />
+        </block>
+      </view>
+    </van-tab>
+    <van-tab title="欧美">
+      <view class="video-list">
+        <block wx:for="{{EAVideoList}}" wx:key="id">
+          <video-item class="item" itemData="{{item}}" />
+        </block>
+      </view>
+    </van-tab>
+    <van-tab title="日本">
+      <view class="video-list">
+        <block wx:for="{{JPVideoList}}" wx:key="id">
+          <video-item class="item" itemData="{{item}}" />
+        </block>
+      </view>
+    </van-tab>
+    <van-tab title="韩国">
+      <view class="video-list">
+        <block wx:for="{{KoreaVideoList}}" wx:key="id">
+          <video-item class="item" itemData="{{item}}" />
+        </block>
+      </view>
+    </van-tab>
+  </van-tabs>
+
+  <!-- Global Music Player -->
+  <global-player />
+</view>

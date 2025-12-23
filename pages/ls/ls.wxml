@@ -1,0 +1,3 @@
+<import src="ls.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<list_songs_page wx:else musicid1="{{musicid}}"></list_songs_page>

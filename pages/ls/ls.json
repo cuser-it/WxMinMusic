@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list_songs_page": "../../component/listSongsPage/listSongsPage"
+  },
+  "navigationBarTitleText": "歌单"
+}

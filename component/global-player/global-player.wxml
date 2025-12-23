@@ -1,0 +1,9 @@
+<wxs src="/utils/format.wxs" module="fmt"></wxs>
+
+<!-- Global Music Player Component -->
+<view class="global-player-container" wx:if="{{hasSongs}}">
+  <!-- Floating Button (navigates to player) -->
+  <view class="floating-btn" bindtap="navigateToPlayer">
+    <image class="floating-album {{isPlaying ? 'rotating' : ''}}" src="{{fmt.formatImage(currentSong.al.picUrl)}}" mode="aspectFill" />
+  </view>
+</view>

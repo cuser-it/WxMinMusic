@@ -1,0 +1,63 @@
+<wxs src="/utils/format.wxs" module="fmt" />
+<image class="bg-img" mode="aspectFill" src="{{songs.songs[0].al.picUrl}}"></image>
+<!-- 
+  图片地址使用获取
+  currentSong.al.picUrl -->
+<view class="bg-cover"></view>
+<view class="">
+  <nav-bar>
+    <view class="tab" slot="title">
+      <view style="color:{{currentIndex === 0?'white':''}}">歌曲</view>
+      <view class="divider">|</view>
+      <view style="color:{{currentIndex === 1?'white':''}}" bindtap="handleLyric">歌词</view>
+    </view>
+  </nav-bar>
+  <swiper class="swiper" style="height:97vh" bindchange="handleSwiperChange">
+    <swiper-item class="music">
+      <view class="album">
+        <image class="img" style="height: 840rpx;" src="{{songs.songs[0].al.picUrl}}"></image>
+      </view>
+      <view class="info">
+        <!-- 歌名 -->
+        <view class="title">{{songs.songs[0].name}}</view>
+        <view class="subtitle">
+          <view class="singer">
+            <block wx:for="{{songs.songs}}" wx:key="id">
+              <!-- 歌手姓名 -->
+              {{fmt.formatName(item.ar || item.artists)}}
+            </block>
+          </view>
+          <!-- 专辑名 -->
+          <view class="alias" wx:if="{{1}}">专辑：{{songs.songs[0].al.name}}</view>
+        </view>
+      </view>
+      <!-- 单条歌词显示  -->
+      <view class="music-lyric">{{lyricitems}}</view>
+      <view class="progress">
+        <slider class="slider" bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle" bindchange="getsongSlider" max="{{slidermaxVal}}" value="{{sliderVal}}" block-size="{{18}}" activecolor="red"></slider>
+        <view class="time">
+          <view class="current">{{startTime}}</view>
+          <view class="duration">{{endTime}}</view>
+        </view>
+      </view>
+      <view class="option">
+        <!-- <image class="btn btn-mode" src="/img/video-循环播放.png"> </image> -->
+        <!-- <image class="btn btn-prev" src="/img/上一首.png"> </image> -->
+        <image bind:tap="zanting" class="btn btn-pause" style="z-index: 1000;" src="{{isPlaying ? '/img/播放-暂停.png' : '/img/播放.png'}}"> </image>
+        <!-- <image class="btn btn-next" src="/img/下一首.png"> </image> -->
+        <!-- <image class="btn btn-music" src="/img/播放列表.png"> </image> -->
+      </view>
+    </swiper-item>
+    <swiper-item class="lyric">
+      <view class="lyricFaBox">
+        <view class="lysonbox" wx:for="{{parsedLRC}}" wx:key="index">
+          <view class="{{currentLyricIndex == index ? 'lycolor_cont' : 'lycolor'}}">{{item.text}}</view>
+        </view>
+        <view class="lysonbox" wx:if="{{parsedLRC==''}}" style="color: white;">没有歌词</view>
+        <view class="lysonbox" wx:if="{{parsedLRC==''}}" style="color: white;">没有歌词</view>
+        <view class="lysonbox" wx:if="{{parsedLRC==''}}" style="color: white;">没有歌词</view>
+
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

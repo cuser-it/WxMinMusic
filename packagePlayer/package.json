@@ -1,0 +1,9 @@
+{
+    "name": "packagePlayer",
+    "version": "1.0.0",
+    "description": "Music player subpackage dependencies",
+    "dependencies": {
+        "mobx-miniprogram": "^4.13.2",
+        "mobx-miniprogram-bindings": "^2.1.5"
+    }
+}

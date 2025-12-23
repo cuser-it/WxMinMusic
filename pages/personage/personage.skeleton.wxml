@@ -1,0 +1,149 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/10/21下午4:24:37
+使用方法：
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\personage\personage.wxml 引入模板
+
+```
+<import src="personage.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\personage\personage.wxss 中引入样式
+```
+@import "./personage.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="fa_box">
+      <view class="userinfo">
+        <view class="info bg">
+          <view class="img_box">
+            <image class="img sk-image" mode="aspectFill"></image>
+          </view>
+          <view class="userName sk-transparent sk-text-14-2857-433 sk-text" style="background-position-x: 50%;">
+            OZZFchen
+          </view>
+          <view class="Grade">
+            <view class="s1 sk-transparent sk-text-14-2857-768 sk-text">2关注</view>
+            <view class="s1 sk-transparent sk-text-14-2857-594 sk-text">18粉丝</view>
+            <view class="s1 sk-transparent sk-text-14-2857-344 sk-text">Lv.9</view>
+          </view>
+        </view>
+      </view>
+      <view class="icon_cont bg">
+        <view class="cont">
+          <image class="img sk-image" mode="aspectFill"></image>
+          <view class="text sk-transparent sk-text-14-2857-866 sk-text" style="background-position-x: 50%;">本地下载</view>
+        </view>
+        <view class="cont">
+          <image class="img sk-image" mode="aspectFill"></image>
+          <view class="text sk-transparent sk-text-14-2857-780 sk-text" style="background-position-x: 50%;">云盘</view>
+        </view>
+        <view class="cont">
+          <image class="img sk-image" mode="aspectFill"></image>
+          <view class="text sk-transparent sk-text-14-2857-435 sk-text" style="background-position-x: 50%;">已购</view>
+        </view>
+        <view class="cont">
+          <image class="img sk-image" mode="aspectFill"></image>
+          <view class="text sk-transparent sk-text-14-2857-576 sk-text" style="background-position-x: 50%;">最近播放</view>
+        </view>
+      </view>
+      <view class="my_like bg">
+        <view class="box1">
+          <view class="img_box">
+            <image class="img_h sk-image" mode="aspectFill"></image>
+            <image class="img_like sk-image" mode="aspectFill"></image>
+          </view>
+          <view class="text">
+            <view class="s1 sk-transparent sk-text-14-2857-232 sk-text">
+              我喜欢的音乐
+            </view>
+            <view class="s2">
+              <image class="img sk-image" mode="aspectFill"></image>
+              <text style="margin-left: 2px;" class="sk-transparent sk-text-14-2857-48 sk-text">691首，已下载1首</text>
+            </view>
+          </view>
+        </view>
+        <view class="box1">
+          <view class="like_s">
+            <image class="img sk-image" mode="aspectFill"></image>
+            <text class="sts sk-transparent sk-text-14-2857-75 sk-text">心动模式</text>
+          </view>
+        </view>
+      </view>
+      <view class="List_songs bg">
+        <view is="miniprogram_npm/@vant/weapp/tabs/index">
+          <view class=" van-tabs tabs-index--van-tabs">
+            <view is="miniprogram_npm/@vant/weapp/sticky/index">
+              <view class=" van-sticky sticky-index--van-sticky" style="z-index:1">
+                <view class="van-sticky-wrap sticky-index--van-sticky-wrap" style="z-index:1">
+                  <view class="van-tabs--line tabs-index--van-tabs--line van-tabs__wrap tabs-index--van-tabs__wrap ">
+                    <scroll-view class="van-tabs__scroll tabs-index--van-tabs__scroll van-tabs__scroll--line tabs-index--van-tabs__scroll--line" scroll-left="0" style="true">
+                      <view class="van-tabs__nav tabs-index--van-tabs__nav van-tabs__nav--line tabs-index--van-tabs__nav--line " style="true">
+                        <view class="van-tabs__line tabs-index--van-tabs__line" style="width:40px;opacity:1;transform:translateX(50px);-webkit-transform:translateX(50px);transition-duration:0.3s;-webkit-transition-duration:0.3s"></view>
+                        <view class="  van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab van-tab--active tabs-index--van-tab--active" data-index="0" style="true">
+                          <view class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-841 sk-text" style="background-position-x: 50%;">
+                            创建歌单
+                          </view>
+                        </view>
+                        <view class=" van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab" data-index="1" style="true">
+                          <view class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-711 sk-text" style="background-position-x: 50%;">
+                            收藏歌单
+                          </view>
+                        </view>
+                      </view>
+                    </scroll-view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-tabs__content tabs-index--van-tabs__content">
+              <view class="van-tabs__track tabs-index--van-tabs__track van-tabs__track--animated tabs-index--van-tabs__track--animated van-tabs__track tabs-index--van-tabs__track" style="left:0%;transition-duration:0.3s;-webkit-transition-duration:0.3s">
+                <view is="miniprogram_npm/@vant/weapp/tab/index">
+                  <view class=" van-tab__pane tab-index--van-tab__pane van-tab__pane--active tab-index--van-tab__pane--active" style="true">
+                    <view class="text_top">
+                      <view class="text sk-transparent sk-text-14-2857-188 sk-text">
+                        创建歌单(6个)
+                      </view>
+                    </view>
+                    <view>
+                      <view class="list_s" data-id="0">
+                        <view class="img_box">
+                          <image class="t_img sk-image" mode="aspectFill"></image>
+                          <view class="s_text">
+                            <view class="s1 sk-transparent sk-text-14-2857-970 sk-text">听悲伤的情歌</view>
+                            <view class="s2">
+                              <image class="img sk-image" mode="aspectFill"></image>
+                              <text style="margin-left: 2px;" class="sk-transparent sk-text-14-2857-590 sk-text">691首，已下载1首</text>
+                            </view>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                    <view>
+                      <view class="list_s" data-id="1">
+                        <view class="img_box">
+                          <image class="t_img sk-image" mode="aspectFill"></image>
+                          <view class="s_text">
+                            <view class="s1 sk-transparent sk-text-14-2857-621 sk-text">病态</view>
+                            <view class="s2"></view>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <view is="miniprogram_npm/@vant/weapp/tab/index">
+                  <view class=" van-tab__pane tab-index--van-tab__pane van-tab__pane--inactive tab-index--van-tab__pane--inactive" style="true"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

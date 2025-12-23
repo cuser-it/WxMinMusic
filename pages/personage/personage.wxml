@@ -1,0 +1,110 @@
+<!--我的页面-->
+<view class="fa_box">
+  <view class="userinfo">
+    <view class="info bg">
+      <view class="img_box">
+        <image class="img" src="/img/user_bg.svg" mode="aspectFill" />
+
+      </view>
+      <view class="userName" bind:tap="c1">
+        {{'未登录'}}
+      </view>
+      <view class="Grade">
+
+        <view class="s1">{{2}} 关注</view>
+        <view class="s1">{{18}} 粉丝</view>
+        <view class="s1">Lv.{{9}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="my_like bg" bindtap="ck1">
+    <view class="box1">
+      <view class="img_box">
+        <image src="/img/网易云音乐2.png" mode="aspectFill" class="img_h" />
+        <image src="/img/爱心.png" mode="aspectFill" class="img_like" />
+      </view>
+      <view class="text">
+        <view class="s1">
+          我喜欢的音乐
+        </view>
+        <view class="s2">
+          <image src="/img/checkcircle圆勾.png" mode="aspectFill" class="img" /><text style="margin-left: 5rpx;">{{691}}首，已下载{{1}}首</text>
+        </view>
+      </view>
+    </view>
+    <view class="box1">
+      <view class="like_s">
+        <image src="/img/icon_心动.png" mode="aspectFill" class="img" />
+        <text class="sts">心动模式</text>
+      </view>
+    </view>
+  </view>
+  <view class="List_songs bg">
+
+    <van-tabs sticky swipeable animated active="{{ active }}">
+      <van-tab title="创建歌单">
+        <view class="text_top">
+          <view class="text">
+            创建歌单({{6}}个)
+          </view>
+        </view>
+        <view wx:for="{{['听悲伤的情歌','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下','病态','丑八怪','就让这大雨全部落下']}}" wx:key="index">
+          <view class="list_s" bindtap="ck2" data-id="{{index}}">
+            <view class="img_box">
+              <image class="t_img" src="/img/wangyiyun.png" mode="aspectFill" />
+              <view class="s_text">
+                <view class="s1">{{item}}</view>
+                <view class="s2">
+                  <image src="/img/checkcircle圆勾.png" mode="aspectFill" class="img" /><text style="margin-left: 5rpx;">{{691}}首，已下载{{1}}首</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="收藏歌单">
+        <view class="text_top">
+          <view class="text">
+            收藏歌单({{6}}个)
+          </view>
+          <view class="icon">
+          </view>
+        </view>
+        <view wx:for="{{5}}" bind:tap="ck2" data-id="{{index}}" wx:key="index">
+          <view class="list_s">
+            <view class="img_box">
+              <image class="t_img" src="/img/wangyiyun.png" mode="widthFix" />
+              <view class="s_text">
+                <view class="s1">好听的歌</view>
+                <view class="s2">
+                  <image src="/img/checkcircle圆勾.png" mode="widthFix" class="img" /><text style="margin-left: 5rpx;">{{691}}首，已下载{{1}}首</text>
+                </view>
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+  <!-- 占位顶起来 -->
+  <view style="height: 120rpx;">
+
+  </view>
+  <van-popup style="display: flex;flex-wrap: wrap;" show="{{ loginShow }}" round position="bottom" custom-style="height: 45%" bind:close="c1">
+    <van-cell-group>
+      <van-field value="{{ phone }}" label="手机号" placeholder="请输入手机号" error-message="手机号格式错误" border="{{ false }}" />
+    </van-cell-group>
+    <van-cell-group >
+      <van-field  value="{{ sms }}" center clearable label="短信验证码" placeholder="请输入短信验证码" border="{{ true }}" use-button-slot>
+        <van-button style="margin: 20rpx 0rpx;" slot="button" size="small" type="primary">
+          发送验证码
+        </van-button>
+      </van-field>
+    </van-cell-group>
+    <van-button size="large  "  plain hairline type="primary"> 登录 </van-button>
+  </van-popup>
+  
+  <!-- Global Music Player -->
+  <global-player />
+</view>

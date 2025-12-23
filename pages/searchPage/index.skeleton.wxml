@@ -1,0 +1,147 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/10/21下午4:24:15
+使用方法：
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\searchPage\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\searchPage\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="fa_box">
+      <view is="miniprogram_npm/@vant/weapp/search/index">
+        <view class="van-search search-index--van-search van-search--withaction search-index--van-search--withaction " style="background: #ffffff">
+          <view class="van-search__content search-index--van-search__content van-search__content--round search-index--van-search__content--round">
+            <view is="miniprogram_npm/@vant/weapp/field/index" class="van-search__field search-index--van-search__field ">
+              <view is="miniprogram_npm/@vant/weapp/cell/index">
+                <view class="field-index--van-field van-cell cell-index--van-cell van-cell--borderless cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="padding: 5px 10px 5px 0; background-color: transparent;">
+                  <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                    <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-search icon-index--van-icon-search sk-pseudo sk-pseudo-circle" style="true"></view>
+                  </view>
+                  <view class="van-cell__value cell-index--van-cell__value ">
+                    <view class="van-field__body field-index--van-field__body van-field__body--search field-index--van-field__body--search">
+                      <view class="van-field__control field-index--van-field__control sk-image" cursor="-1" maxlength="-1" placeholder="请输入搜索关键词" placeholder-class="van-field__placeholder" placeholder-style="true" selection-end="-1" selection-start="-1"
+                        type="search" value="true"></view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="van-search__action search-index--van-search__action" hover-class="van-search__action--hover" hover-stay-time="70">
+            <view class="van-search__action-button search-index--van-search__action-button sk-transparent sk-text-29-4118-123 sk-text">取消</view>
+          </view>
+        </view>
+      </view>
+      <view class="h_text">
+        <text class="sk-transparent sk-text-14-2857-598 sk-text">热门搜索</text>
+      </view>
+      <view>
+        <view style="display: flex;flex-wrap: wrap;">
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="apt" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-65 sk-text">
+                apt
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="罗生门" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-343 sk-text">
+                罗生门
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="李荣浩" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-28 sk-text">
+                李荣浩
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="方大同 回留" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-771 sk-text">
+                方大同 回留
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="爱错" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-161 sk-text">
+                爱错
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="孤独患者" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-372 sk-text">
+                孤独患者
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="米奇GO" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-594 sk-text">
+                米奇GO
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="苹果香" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-218 sk-text">
+                苹果香
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="邓典果DDG" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-683 sk-text">
+                邓典果DDG
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/transition/index">
+            <view class="van-transition transition-index--van-transition block van-slide-left-enter-to transition-index--van-slide-left-enter-to van-slide-left-enter-active transition-index--van-slide-left-enter-active  " style="-webkit-transition-duration:300ms;transition-duration:300ms">
+              <view data-songvalue="青丝" style="border-radius: 17px; padding: 6px 15px;margin: 4px; background-color: #ffffff; height: 17px;border: 0.5px solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" class="sk-transparent sk-text-14-2857-504 sk-text">
+                青丝
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="h_text">
+          <text class="sk-transparent sk-text-14-2857-713 sk-text">历史搜索</text>
+        </view>
+        <view data-ix="小孩" style="display: flex;justify-content: space-between;align-items: center; border-bottom: 0.5px solid #eeeeee; font-size: 12px;">
+          <view class="sk-transparent">
+            <view is="miniprogram_npm/@vant/weapp/icon/index" style="padding: 12px 8px 12px 0px;">
+              <view class="van-icon icon-index--van-icon van-icon-clock-o icon-index--van-icon-clock-o sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>小孩
+          </view>
+          <view data-ix="0" style="padding: 8px;">
+            <view is="miniprogram_npm/@vant/weapp/icon/index">
+              <view class="van-icon icon-index--van-icon van-icon-cross icon-index--van-icon-cross sk-pseudo sk-pseudo-circle" style="true"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/button/index" style="display: flex; padding: 8px;">
+        <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--round button-index--van-button--round van-button--hairline button-index--van-button--hairline van-hairline--surround button-index--van-hairline--surround sk-pseudo sk-pseudo-circle sk-image"
+          data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color:#fff;background:linear-gradient(to right, #E9E8FF, #FFE6FA);border:0">
+          <view class="van-button__text button-index--van-button__text">
+            <text style="color: rgb(224, 114, 133); background-position-x: 50%;" class="sk-transparent sk-text-15-0000-517 sk-text">清空历史</text>
+          </view>
+        </button>
+      </view>
+    </view>
+  </view>
+</template>

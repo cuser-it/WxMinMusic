@@ -1,0 +1,72 @@
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<!--搜索页面-->
+<view class="fa_box" wx:else>
+  <!-- <view class="search_box">
+    <van-icon class="icon" name="search" />
+    <input class="search_input" value="{{songName}}" bindblur="getSongName" placeholder="搜索歌曲" placeholder-class="search_input_pl" type="text" />
+    <view class="ck_box" bindtap="getSearch" data-="">
+      搜索
+    </view>
+  </view> -->
+  <!-- 水平线 -->
+  <van-search value="{{songName }}" shape="round" show-action bind:search="getSearch" bind:cancel="onCancel" placeholder="请输入搜索关键词" />
+
+  <!-- 水平线 -->
+  <view class="h_text">
+    <text wx:if="{{lookupSongs!='' /* 这里条件为取决于是否搜索*/}}">最佳匹配</text>
+    <text wx:else="">热门搜索</text>
+  </view>
+  <view>
+    <view wx:if="{{lookupSongs!='' /* 这里条件为取决于是否搜索*/}}">
+      <!-- 这里是搜索结果的数据展示区域 -->
+      <view class="song_List" wx:for="{{lookupSongs}}" wx:key="index" bind:tap="getlogs" data-songId="{{item.id}}">
+        <view class="list_neme">
+          <view class="song_name">
+            {{item.name}}
+          </view>
+          <view class="singer">
+            <!-- <van-icon style="padding: 0rpx 6rpx;" wx:if="{{1==1}}" color='red' name="like" /> -->
+            <text wx:if="{{item.album}}" class="s1">原唱</text>
+            <text wx:if="{{item.fee==0}}" style="border:1rpx solid #838383;color: rgb(128, 128, 128);" class="ss1">免费</text>
+            <text wx:if="{{item.fee==1}}" class="ss1">没VIP听不了哦，登录没写</text>
+            <text wx:if="{{item.fee==4}}" style="border:1rpx solid  #ca1010;color: #ca1010;" class="ss1">专辑</text>
+            <text wx:if="{{item.fee==8}}" style="border:1rpx solid rgb(23, 173, 9);color: rgb(23, 173, 9);" class="ss1">免费</text>
+            <text class="s2" wx:for="{{item.artists}}" wx:key="index">{{item.name}} <text style="margin-left: 10rpx;"> </text> <text wx:if="{{index!=0}}"></text></text>
+            <text class="s3" wx:if="{{item.alias!=''}}">-{{item.alias}}</text>
+
+          </view>
+          <view class="Shakelight">
+            <text class="s1">{{item.album.name}}</text>
+          </view>
+        </view>
+        <view class="list_icon">
+          <van-icon name="weapp-nav" />
+        </view>
+      </view>
+    </view>
+    <view wx:else="" style="display: flex;flex-wrap: wrap;">
+      <!-- 这里是展示热搜词的区域 -->
+      <van-transition wx:for="{{SearchHto}}" wx:key="index" name="slide-left" custom-class="block">
+        <view style="border-radius: 40rpx; padding: 16rpx 36rpx;margin: 10rpx; background-color: #ffffff; height: 40rpx;border: 1rpx solid #5050503f; overflow: hidden; text-overflow: ellipsis; white-space: normal;" bind:tap="getSongName" data-songValue="{{item.first}}">
+          {{item.first}}
+        </view>
+      </van-transition>
+    </view>
+    <view class="h_text">
+      <text wx:if="{{History.length!=0 && /* 这里条件为取决于是否搜索*/ lookupSongs==''}}">历史搜索</text>
+    </view>
+    <view wx:for="{{History}}" wx:key="index" wx:if="{{index<5 && /* 这里条件为取决于是否搜索*/ lookupSongs==''}}" style="display: flex;justify-content: space-between;align-items: center; border-bottom: 1rpx solid #eeeeee; font-size: 30rpx;" data-ix="{{item}}" bind:tap="getSongName">
+      <view>
+        <van-icon name="clock-o" style="padding: 30rpx 20rpx 30rpx 0rpx;" />{{item}}
+      </view>
+      <view style="padding: 20rpx;" catchtap="getslice" data-ix="{{index}}">
+        <van-icon name="cross" />
+      </view>
+    </view>
+  </view>
+  <van-button wx:if="{{History.length!==0&&lookupSongs==''}}" bind:click="deleteSearchHistory" style="display: flex; padding: 20rpx;" hairline round color="linear-gradient(to right, #E9E8FF, #FFE6FA)" type="info"><text style="color: #e07285;">清空历史</text></van-button>
+  
+  <!-- Global Music Player -->
+  <global-player />
+</view>

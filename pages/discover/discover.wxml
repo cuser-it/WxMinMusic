@@ -1,0 +1,112 @@
+<import src="discover.skeleton.wxml" />
+<wxs src="/utils/format.wxs" module="fmt"></wxs>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+  <!--发现页面-->
+  <view class="search_box">
+
+    <navigator url="/pages/searchPage/index">
+      <view class="search_box_input">
+        <van-icon name="search" />{{tips2}}
+      </view>
+    </navigator>
+  </view>
+  <view class="swiper">
+    <swiper duration="500" circular autoplay snap-to-edge indicator-active-color="#ffffff" indicator-color="#e2e2e2ce">
+      <swiper-item wx:for="{{Banner}}" wx:key="index">
+        <view class="s_Child">
+          <image class="s_img" src="{{fmt.formatImage(item.imageUrl)}}" mode="aspectFill" />
+          <view class="s_text">{{item.typeTitle}}</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="Home_page_icon">
+    <!-- 首页功能按钮 目前已经取消 -->
+    <!-- <view class="home_icon" wx:for="{{Homeicon}}" wx:key="index">
+    <image class="icon_img" src="{{item.iconUrl}}" mode="aspectFill" />
+    <view class="icon_text">
+      {{item.name}}
+    </view>
+  </view> -->
+  </view>
+  <view class="Recommended_playlist">
+    <view class="Recommended_text">
+      推荐歌单
+      <van-icon name="arrow" />
+    </view>
+    <scroll-view scroll-x="true" enhanced show-scrollbar="{{false}}" style="width: 95vw; margin: 0 auto;">
+      <!-- 横向滚动的内容 -->
+      <view class="Recommended_list">
+        <view class="song_list" wx:for="{{resource}}" bind:tap="getmusicId" data-musicId="{{item.id}}" wx:key="index">
+          <view class="box1" style="font-size: 30rpx;" wx:if="{{index==0}}">
+            <van-icon name="bookmark" />
+          </view>
+          <view class="box1" wx:else>
+            <van-icon name="play" />{{item.playCount}}
+          </view>
+          <view class="box2" wx:if="{{index!==0}}">
+            <van-icon name="play" />
+          </view>
+          <image class="song_img" src="{{fmt.formatImage(item.picUrl)}}" mode="aspectFill" />
+          <view class="song_text">
+            <!-- 歌单名字 -->{{item.name}}
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <van-notice-bar wx:if="{{tips}}" scrollable color="#FEFDFB" speed="60" background="#E7D3FB" text="{{tips}}" />
+  <view class="hit_song">
+    <view class="hit_songName">
+      <view style="font-weight: bold;font-size: 34rpx;margin: 0rpx 20rpx;">
+        {{'推荐音乐'}}
+        <van-icon name="arrow" />
+      </view>
+    </view>
+    <swiper next-margin="30rpx" style="height: 420rpx;">
+      <swiper-item>
+        <view class="list_songs">
+          <view class="songs" wx:for="{{Music1}}" bind:tap="getmusicUrlID" data-musicId="{{item.id}}" wx:key="index">
+            <view class="songs_l">
+              <image class="songs_img" src="{{fmt.formatImage(item.picUrl)}}" mode="aspectFill" />
+              <view class="songs_name">
+                <view class="s_name">{{item.name}}</view>
+                <view class="s_name2">{{item.song.artists[0].name}}</view>
+              </view>
+            </view>
+            <view class="songs_r">
+              <view class="s1">
+                <van-icon name="play" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="list_songs">
+          <view class="songs" wx:for="{{Music2}}" bind:tap="getmusicUrlID" data-musicId="{{item.id}}" wx:key="index">
+            <view class="songs_l">
+              <image class="songs_img" src="{{fmt.formatImage(item.picUrl)}}" mode="aspectFill" />
+              <view class="songs_name">
+                <view class="s_name">{{item.name}}</view>
+                <view class="s_name2">{{item.song.artists[0].name}}</view>
+              </view>
+            </view>
+            <view class="songs_r">
+              <view class="s1">
+                <van-icon name="play" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 占位顶起来 -->
+  <view style="height: 100rpx;">
+  </view>
+  
+  <!-- Global Music Player -->
+  <global-player />
+</view>

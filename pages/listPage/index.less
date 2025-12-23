@@ -1,0 +1,208 @@
+page {
+  background-color: #b3b3b3;
+  position: relative;
+
+  .fa_BOX {
+    margin: auto;
+    width: 100vw;
+    padding: 30rpx 20rpx;
+    .fa_box1 {
+
+      .songimg_box {
+        position: relative;
+        display: flex;
+
+        .img_box {
+          position: relative;
+
+          .img {
+            border: 1rpx solid rgba(255, 255, 255, 0);
+            background-color: #cacaca;
+            border-radius: 25rpx;
+            width: 150rpx;
+            height: 150rpx;
+            
+          }
+
+          .Play_Count {
+            position: absolute;
+            top: 6rpx;
+            right: 6rpx;
+            color: white;
+            font-size: 18rpx;
+          }
+        }
+
+        .text {
+          padding: 0rpx 20rpx;
+          font-weight: bold;
+          color: white;
+          font-size: 28rpx;
+
+          .s1 {
+            display: flex;
+            align-items: center;
+            padding: 5rpx;
+            font-size: 24rpx;
+            color: #d6d6d6;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .fa_text {
+        color: rgb(226, 226, 226);
+        font-size: 22rpx;
+        display: flex;
+
+        .icon {
+          padding: 0rpx 10rpx;
+        }
+
+        .textVal {
+          // outline: 1px solid red;
+          width: 450rpx;
+          white-space: nowrap;
+          overflow: hidden;
+          // text-overflow: ellipsis;
+          background: linear-gradient(to right, rgb(235, 235, 235) 91%, rgba(187, 187, 187, 0.068) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          /* 兼容 Safari 浏览器 */
+          color: transparent;
+        }
+
+      }
+
+      .icon_cont {
+        display: flex;
+        justify-content: space-between;
+        width: 95vw;
+        padding: 20rpx 0rpx;
+
+        .icon_box {
+          background-color: rgba(219, 219, 219, 0.301);
+          color: white;
+          font-size: 26rpx;
+          border-radius: 50rpx;
+          padding: 14rpx 60rpx;
+        }
+      }
+    }
+  }
+
+  .fa_box2 {
+    background-color: #FFFFFF;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    padding-bottom: 150rpx;
+
+    .top_box {
+      padding: 24rpx 0rpx;
+      display: flex;
+      // align-items: center;
+      align-content: center;
+      justify-content: space-between;
+
+      .icons {
+        font-size: 20rpx;
+        color: #000;
+
+        .icon {
+          font-size: 38rpx;
+          padding: 0rpx 20rpx;
+          color: rgba(248, 73, 42, 0.932);
+        }
+
+        .icon:nth-child(2) {
+          color: black;
+        }
+
+        .text {
+          font-size: 28rpx;
+          font-weight: bold;
+          padding-right: 20rpx;
+        }
+      }
+    }
+
+    .song_List {
+      padding: 5rpx;
+      border-top: 1rpx solid rgb(204, 204, 204);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+
+      .list_icon {
+        padding: 20rpx;
+        color: rgb(209, 207, 207);
+      }
+
+      .r_box {
+        display: flex;
+        align-items: center;
+        padding: 5rpx;
+
+        .oneList {
+          width: 50rpx;
+          text-align: center;
+          font-size: 20rpx;
+          color: #919191;
+        }
+
+        .list_neme {
+
+          .song_name {
+            color: black;
+            font-size: 28rpx;
+            padding: 4rpx 10rpx;
+          }
+
+          .singer {
+            font-size: 20rpx;
+            color: rgb(146, 146, 146);
+            padding: 4rpx 10rpx;
+            display: flex;
+            align-items: center;
+
+            .s1,
+            .ss1 {
+              font-size: 14rpx;
+              padding: 2rpx 4rpx;
+              border-radius: 4rpx;
+              margin: 2rpx;
+            }
+
+            .s1 {
+              color: white;
+              background-color: #CC463D;
+            }
+
+            .ss1 {
+
+              color: #F5BD00;
+              border: 1rpx solid #F5BD00;
+            }
+          }
+
+          .Shakelight {
+            padding: 4rpx 10rpx;
+            font-size: 20rpx;
+            color: rgb(146, 146, 146);
+
+            .s1 {
+              padding: 0rpx 6rpx;
+              background-color: rgb(255, 236, 223);
+              color: rgb(238, 144, 36);
+              border-radius: 8rpx;
+              font-size: 18rpx;
+              margin-right: 10rpxfs;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/* pages/main-video/mian-video.wxss */
+@import "./videopage.skeleton.wxss";
+page {
+  --tabs-nav-background-color: #fafafa;
+}
+.video-list {
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.video-list .item {
+  width: 48%;
+}

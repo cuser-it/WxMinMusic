@@ -1,0 +1,219 @@
+<!--
+此文件为开发者工具生成，生成时间: 2024/10/22下午1:15:39
+使用方法：
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\ls\ls.wxml 引入模板
+
+```
+<import src="ls.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\cctg\ccc\暂存\微信小程序\NetEaseCloud\pages\ls\ls.wxss 中引入样式
+```
+@import "./ls.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view is="component/listSongsPage/listSongsPage">
+      <view class="listSongsPage--FFAA">
+        <view class="listSongsPage--fa_BOX">
+          <view class="listSongsPage--fa_box">
+            <view class="listSongsPage--song_img_box">
+              <view class="listSongsPage--img_box">
+                <image class="listSongsPage--img sk-image" mode="aspectFill"></image>
+                <view class="listSongsPage--Play_Count sk-transparent">
+                  <view is="miniprogram_npm/@vant/weapp/icon/index">
+                    <view class="van-icon icon-index--van-icon van-icon-play icon-index--van-icon-play sk-pseudo sk-pseudo-circle" style="true"></view>
+                  </view>9.1万
+                </view>
+              </view>
+              <view class="listSongsPage--text">
+                <view class="sk-transparent sk-text-14-2857-205 sk-text">
+                  老歌对味 | 旧情绵绵再听亦是泪
+                </view>
+                <view class="listSongsPage--s1">
+                  <image mode="aspectFill" style="width: 16px;height: 16px;" class="sk-image"></image>
+                  <text style="padding: 2px;" class="sk-transparent sk-text-14-2857-139 sk-text">杨大叔呢</text>
+                  <view is="miniprogram_npm/@vant/weapp/icon/index">
+                    <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="true"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="listSongsPage--fa_text">
+              <view class="listSongsPage--textVal sk-image">
+                <view is="miniprogram_npm/@vant/weapp/notice-bar/index">
+                  <view class=" van-notice-bar index--van-notice-bar" style="color:#e2e2e2;background:#e2e2e200">
+                    <view class="van-notice-bar__wrap index--van-notice-bar__wrap">
+                      <view class="van-notice-bar__content index--van-notice-bar__content sk-transparent sk-text-22-9167-817 sk-text" style=";transition:28351.666259765625ms linear 1ms;transform:translateX(-1485.0999755859375px);transition-property:transform;transform-origin:50% 50% 0;-webkit-transition:28351.666259765625ms linear 1ms;-webkit-transform:translateX(-1485.0999755859375px);-webkit-transition-property:transform;-webkit-transform-origin:50% 50% 0">
+                        总有一些事情，当我们年轻的时候，无法懂得。懂得的时候，却已经不再年轻。不怕旋律多好听，就怕歌词入人心！ 欢迎乘坐音乐时光机 开车出行专用！醇香老歌，配送给老司机 让一路风景伴随，让怀旧老歌陪伴你我，让我们聆听旧时光磁带里的经典旋律 ….
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="listSongsPage--icon"></view>
+            </view>
+            <view class="listSongsPage--icon_cont">
+              <view class="listSongsPage--icon_box sk-transparent">
+                <view is="miniprogram_npm/@vant/weapp/icon/index">
+                  <view class="van-icon icon-index--van-icon van-icon-share icon-index--van-icon-share sk-pseudo sk-pseudo-circle" style="true"></view>
+                </view>分享
+              </view>
+            </view>
+          </view>
+          <image mode="widthFix" style="width: 100%; filter: blur(13px); background: rgba(0, 0, 0, 0.11); position: absolute; margin: -198px 0px 0px -11px; z-index: -1; outline: red solid 1px; height: 414px;" class="sk-image"></image>
+        </view>
+        <view class="listSongsPage--fa_box2">
+          <view class="listSongsPage--top_box">
+            <view class="listSongsPage--icons sk-transparent">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="listSongsPage--icon">
+                <view class="van-icon icon-index--van-icon van-icon-play-circle icon-index--van-icon-play-circle sk-pseudo sk-pseudo-circle" style="true"></view>
+              </view>
+              <text class="listSongsPage--text sk-transparent sk-text-14-2857-784 sk-text">全部播放</text>总计 101 首
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-422 sk-text" style="background-position-x: 50%;">
+                1
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-786 sk-text">
+                  窗外
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-466 sk-text" style="border:0.5px solid rgb(23, 173, 9);color: rgb(23, 173, 9);">免费</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-366 sk-text">李琛</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-732 sk-text">-窗外</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-632 sk-text" style="background-position-x: 50%;">
+                2
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-172 sk-text">
+                  爱我的人和我爱的人
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-799 sk-text">没VIP照样听</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-784 sk-text">泳儿</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-326 sk-text">-爱．情歌</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-127 sk-text" style="background-position-x: 50%;">
+                3
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-452 sk-text">
+                  恋曲1990
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-422 sk-text">没VIP照样听</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-914 sk-text">罗大佑</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-157 sk-text">-昨日情歌74-89</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-334 sk-text" style="background-position-x: 50%;">
+                4
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-832 sk-text">
+                  伤心1999
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-902 sk-text">没VIP照样听</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-472 sk-text">王杰</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-873 sk-text">-万岁2001 新曲+精选</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-99 sk-text" style="background-position-x: 50%;">
+                5
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-701 sk-text">
+                  梦醒时分
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-778 sk-text" style="border:0.5px solid #838383;color: rgb(128, 128, 128);">免费 可能没版权</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-64 sk-text">陈淑桦</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-122 sk-text">-滚石香港黄金十年 陈淑桦精选</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-585 sk-text" style="background-position-x: 50%;">
+                6
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-500 sk-text">
+                  爱如潮水
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-534 sk-text" style="border:0.5px solid rgb(23, 173, 9);color: rgb(23, 173, 9);">免费</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-753 sk-text">张信哲</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-162 sk-text">-张信哲精选</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-990 sk-text" style="background-position-x: 50%;">
+                7
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-725 sk-text">
+                  伤心太平洋
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-64 sk-text">没VIP照样听</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-27 sk-text">任贤齐</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-574 sk-text">-爱像太平洋</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="listSongsPage--song_List" data-id="[object Object]">
+            <view class="listSongsPage--r_box">
+              <view class="listSongsPage--oneList sk-transparent sk-text-14-2857-670 sk-text" style="background-position-x: 50%;">
+                8
+              </view>
+              <view class="listSongsPage--list_neme">
+                <view class="listSongsPage--song_name sk-transparent sk-text-14-2857-404 sk-text">
+                  盛夏的果实
+                </view>
+                <view class="listSongsPage--singer">
+                  <text class="listSongsPage--ss1 sk-transparent sk-text-14-2857-334 sk-text">没VIP照样听</text>
+                  <text class="listSongsPage--s2 sk-transparent sk-text-14-2857-524 sk-text">莫文蔚</text>
+                  <text class="listSongsPage--s3 sk-transparent sk-text-14-2857-21 sk-text">-含情莫莫 莫文蔚全精选辑</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

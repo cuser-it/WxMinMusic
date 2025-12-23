@@ -1,0 +1,48 @@
+.my_player {
+  width: 100vw;
+  height: 100rpx;
+  background-color: #FCFDFF;
+}
+.my_player .play_box {
+  width: 95vw;
+  height: 100rpx;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my_player .play_box .box1 {
+  display: flex;
+  align-items: center;
+}
+.my_player .play_box .box1 .bo1_img {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 10rpx;
+  background: linear-gradient(to right, #050608 0%, #4f4f50 50%, #050608 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my_player .play_box .box1 .box_text .song_Name {
+  margin: auto 10rpx;
+}
+.my_player .play_box .box1 .box_text .s2 {
+  color: #5f5f5f;
+}
+.my_player .play_box .box2 {
+  width: 140rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_player .play_box .box2 .play_icon {
+  color: #353535;
+  font-size: 56rpx;
+}
+.my_player .play_box .box2 .icon_2 {
+  text-align: center;
+  font-size: 54rpx;
+  color: #353535;
+}

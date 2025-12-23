@@ -1,0 +1,23 @@
+<!-- 播放器组件 -->
+<view class="my_player">
+  <view class="play_box">
+    <view class="box1">
+      <!-- 歌曲专辑 + 歌名 + 歌手 -->
+      <van-image animation="{{animationData}}" class="bo1_img" round width="2rem" height="2rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <view class="box_text">
+        <text class="song_Name">{{'默(Live)'}}</text><text class="s2">- {{'张杰'}}</text>
+      </view>
+    </view>
+    <view class="box2">
+      <!-- 歌单列表 + 播放暂停功能 -->
+      <view class="play_icon" bindtap="PlayPause">
+        <van-icon name="play-circle-o" wx:if="{{Pause}}" />
+        <van-icon name="pause-circle-o" wx:else />
+      </view>
+      <view class="icon_2">
+        <van-icon name="wap-nav" />
+      </view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/discover/discover",
+    "pages/personage/personage",
+    "pages/searchPage/index",
+    "pages/listPage/index",
+    "pages/PlayDetailsPage/index",
+    "pages/videoPage/videopage",
+    "pages/ls/ls"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "global-player": "/component/global-player/global-player"
+  },
+  "tabBar": {
+    "selectedColor": "#D05847",
+    "list": [
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "img/网易云音乐1.png",
+        "selectedIconPath": "img/网易云音乐2.png"
+      },
+      {
+        "pagePath": "pages/videoPage/videopage",
+        "text": "视频",
+        "iconPath": "img/播放-圆-F (1).png",
+        "selectedIconPath": "img/播放-圆-F (2).png"
+      },
+      {
+        "pagePath": "pages/personage/personage",
+        "text": "我的",
+        "iconPath": "img/音乐1.png",
+        "selectedIconPath": "img/音乐2.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "packageVideo",
+      "name": "video",
+      "pages": [
+        "pages/detail-video/detail-video"
+      ]
+    },
+    {
+      "root": "packagePlayer",
+      "name": "player",
+      "independent": true,
+      "pages": [
+        "pages/music-player/music-player"
+      ]
+    }
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "lazyCodeLoading": "requiredComponents"
+}

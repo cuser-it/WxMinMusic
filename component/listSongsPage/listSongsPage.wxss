@@ -1,0 +1,192 @@
+.FFAA {
+  background-color: #0000006c;
+  position: relative;
+  --notice-bar-font-size: 24rpx;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 整页滚动容器 */
+.page-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.FFAA .fa_BOX {
+  margin: auto;
+  width: 100vw;
+  padding: 30rpx 20rpx;
+  position: relative;
+}
+.FFAA .fa_BOX .fa_box .song_img_box {
+  position: relative;
+  display: flex;
+}
+.FFAA .fa_BOX .fa_box .song_img_box .img_box {
+  position: relative;
+}
+.FFAA .fa_BOX .fa_box .song_img_box .img_box .img {
+  border: 1rpx solid rgba(255, 255, 255, 0);
+  background-color: #cacaca;
+  border-radius: 25rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+.FFAA .fa_BOX .fa_box .song_img_box .img_box .Play_Count {
+  position: absolute;
+  top: 6rpx;
+  right: 6rpx;
+  color: white;
+  font-size: 18rpx;
+}
+.FFAA .fa_BOX .fa_box .song_img_box .text {
+  padding: 0rpx 20rpx;
+  font-weight: bold;
+  color: white;
+  font-size: 28rpx;
+}
+.FFAA .fa_BOX .fa_box .song_img_box .text .s1 {
+  display: flex;
+  align-items: center;
+  padding: 5rpx;
+  font-size: 24rpx;
+  color: #d6d6d6;
+  font-weight: 400;
+}
+.FFAA .fa_BOX .fa_box .fa_text {
+  color: #e2e2e2;
+  font-size: 22rpx;
+  display: flex;
+}
+.FFAA .fa_BOX .fa_box .fa_text .icon {
+  padding: 0rpx 10rpx;
+}
+.FFAA .fa_BOX .fa_box .fa_text .textVal {
+  width: 450rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  background: linear-gradient(to right, #ebebeb 91%, rgba(187, 187, 187, 0.068) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* 兼容 Safari 浏览器 */
+  color: transparent;
+}
+.FFAA .fa_BOX .fa_box .icon_cont {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  padding: 20rpx 0rpx;
+}
+.FFAA .fa_BOX .fa_box .icon_cont .icon_box {
+  background-color: rgba(219, 219, 219, 0.301);
+  color: white;
+  font-size: 26rpx;
+  border-radius: 50rpx;
+  padding: 14rpx 60rpx;
+}
+.FFAA .fa_box2 {
+  background-color: #FFFFFF;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  min-height: calc(100vh - 360rpx);
+}
+.FFAA .fa_box2 .top_box {
+  padding: 24rpx 0rpx;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.FFAA .fa_box2 .top_box .icons {
+  font-size: 20rpx;
+  color: #000;
+}
+.FFAA .fa_box2 .top_box .icons .icon {
+  font-size: 38rpx;
+  padding: 0rpx 20rpx;
+  color: rgba(248, 73, 42, 0.932);
+}
+.FFAA .fa_box2 .top_box .icons .icon:nth-child(2) {
+  color: black;
+}
+.FFAA .fa_box2 .top_box .icons .text {
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-right: 20rpx;
+}
+
+.FFAA .fa_box2 .song_List {
+  padding: 5rpx;
+  border-top: 1rpx solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FFAA .fa_box2 .song_List .list_icon {
+  padding: 20rpx;
+  color: #d1cfcf;
+}
+.FFAA .fa_box2 .song_List .r_box {
+  display: flex;
+  align-items: center;
+  padding: 5rpx;
+}
+.FFAA .fa_box2 .song_List .r_box .oneList {
+  width: 50rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #919191;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .song_name {
+  color: black;
+  font-size: 28rpx;
+  padding: 4rpx 10rpx;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .singer {
+  font-size: 20rpx;
+  color: #929292;
+  padding: 4rpx 10rpx;
+  display: flex;
+  align-items: center;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .singer .s1,
+.FFAA .fa_box2 .song_List .r_box .list_neme .singer .ss1 {
+  font-size: 14rpx;
+  padding: 2rpx 4rpx;
+  border-radius: 4rpx;
+  margin: 2rpx;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .singer .s1 {
+  color: white;
+  background-color: #CC463D;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .singer .ss1 {
+  color: #F5BD00;
+  border: 1rpx solid #F5BD00;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .Shakelight {
+  padding: 4rpx 10rpx;
+  font-size: 20rpx;
+  color: #929292;
+}
+.FFAA .fa_box2 .song_List .r_box .list_neme .Shakelight .s1 {
+  padding: 0rpx 6rpx;
+  background-color: #ffecdf;
+  color: #ee9024;
+  border-radius: 8rpx;
+  font-size: 18rpx;
+  margin-right: 10rpxfs;
+}
+
+/* Loading and end-of-list indicators */
+.loading-more,
+.no-more-data {
+  text-align: center;
+  padding: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.loading-more .text,
+.no-more-data .text {
+  opacity: 0.8;
+}

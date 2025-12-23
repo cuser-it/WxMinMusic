@@ -1,0 +1,167 @@
+@import "./index.skeleton.wxss";
+page {
+  background-color: #b3b3b3;
+  position: relative;
+}
+page .fa_BOX {
+  margin: auto;
+  width: 100vw;
+  padding: 30rpx 20rpx;
+}
+page .fa_BOX .fa_box1 .songimg_box {
+  position: relative;
+  display: flex;
+}
+page .fa_BOX .fa_box1 .songimg_box .img_box {
+  position: relative;
+}
+page .fa_BOX .fa_box1 .songimg_box .img_box .img {
+  border: 1rpx solid rgba(255, 255, 255, 0);
+  background-color: #cacaca;
+  border-radius: 25rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+page .fa_BOX .fa_box1 .songimg_box .img_box .Play_Count {
+  position: absolute;
+  top: 6rpx;
+  right: 6rpx;
+  color: white;
+  font-size: 18rpx;
+}
+page .fa_BOX .fa_box1 .songimg_box .text {
+  padding: 0rpx 20rpx;
+  font-weight: bold;
+  color: white;
+  font-size: 28rpx;
+}
+page .fa_BOX .fa_box1 .songimg_box .text .s1 {
+  display: flex;
+  align-items: center;
+  padding: 5rpx;
+  font-size: 24rpx;
+  color: #d6d6d6;
+  font-weight: 400;
+}
+page .fa_BOX .fa_box1 .fa_text {
+  color: #e2e2e2;
+  font-size: 22rpx;
+  display: flex;
+}
+page .fa_BOX .fa_box1 .fa_text .icon {
+  padding: 0rpx 10rpx;
+}
+page .fa_BOX .fa_box1 .fa_text .textVal {
+  width: 450rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  background: linear-gradient(to right, #ebebeb 91%, rgba(187, 187, 187, 0.068) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* 兼容 Safari 浏览器 */
+  color: transparent;
+}
+page .fa_BOX .fa_box1 .icon_cont {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  padding: 20rpx 0rpx;
+}
+page .fa_BOX .fa_box1 .icon_cont .icon_box {
+  background-color: rgba(219, 219, 219, 0.301);
+  color: white;
+  font-size: 26rpx;
+  border-radius: 50rpx;
+  padding: 14rpx 60rpx;
+}
+page .fa_box2 {
+  background-color: #FFFFFF;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  padding-bottom: 150rpx;
+}
+page .fa_box2 .top_box {
+  padding: 24rpx 0rpx;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+page .fa_box2 .top_box .icons {
+  font-size: 20rpx;
+  color: #000;
+}
+page .fa_box2 .top_box .icons .icon {
+  font-size: 38rpx;
+  padding: 0rpx 20rpx;
+  color: rgba(248, 73, 42, 0.932);
+}
+page .fa_box2 .top_box .icons .icon:nth-child(2) {
+  color: black;
+}
+page .fa_box2 .top_box .icons .text {
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-right: 20rpx;
+}
+page .fa_box2 .song_List {
+  padding: 5rpx;
+  border-top: 1rpx solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+page .fa_box2 .song_List .list_icon {
+  padding: 20rpx;
+  color: #d1cfcf;
+}
+page .fa_box2 .song_List .r_box {
+  display: flex;
+  align-items: center;
+  padding: 5rpx;
+}
+page .fa_box2 .song_List .r_box .oneList {
+  width: 50rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #919191;
+}
+page .fa_box2 .song_List .r_box .list_neme .song_name {
+  color: black;
+  font-size: 28rpx;
+  padding: 4rpx 10rpx;
+}
+page .fa_box2 .song_List .r_box .list_neme .singer {
+  font-size: 20rpx;
+  color: #929292;
+  padding: 4rpx 10rpx;
+  display: flex;
+  align-items: center;
+}
+page .fa_box2 .song_List .r_box .list_neme .singer .s1,
+page .fa_box2 .song_List .r_box .list_neme .singer .ss1 {
+  font-size: 14rpx;
+  padding: 2rpx 4rpx;
+  border-radius: 4rpx;
+  margin: 2rpx;
+}
+page .fa_box2 .song_List .r_box .list_neme .singer .s1 {
+  color: white;
+  background-color: #CC463D;
+}
+page .fa_box2 .song_List .r_box .list_neme .singer .ss1 {
+  color: #F5BD00;
+  border: 1rpx solid #F5BD00;
+}
+page .fa_box2 .song_List .r_box .list_neme .Shakelight {
+  padding: 4rpx 10rpx;
+  font-size: 20rpx;
+  color: #929292;
+}
+page .fa_box2 .song_List .r_box .list_neme .Shakelight .s1 {
+  padding: 0rpx 6rpx;
+  background-color: #ffecdf;
+  color: #ee9024;
+  border-radius: 8rpx;
+  font-size: 18rpx;
+  margin-right: 10rpxfs;
+}

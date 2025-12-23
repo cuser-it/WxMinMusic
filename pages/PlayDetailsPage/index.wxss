@@ -1,0 +1,149 @@
+/* pages/music-player/index.wxss */
+page {
+  width: 100%;
+}
+
+.bg-img,
+.bg-cover {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover {
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(10px);
+}
+
+.tab {
+  display: flex;
+  font-size: 28rpx;
+  justify-content: center;
+  color: rgb(209, 202, 202);
+}
+
+.divider {
+  margin: 0 20rpx;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+
+.album {
+  flex: 7;
+}
+
+.album .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.info {
+  color: #fff;
+}
+
+.info .title {
+  margin: 20rpx 0;
+  font-size: 36rpx;
+}
+
+.info .subtitle {
+  font-size: 28rpx;
+  color: #ccc;
+  line-height: 50rpx;
+}
+
+.music-lyric {
+  height: 40rpx;
+  margin-top: 40rpx;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.currentLyrc {
+  /* 高亮显示的歌词样式 */
+  color: #ff0000;
+  /* 示例：将当前歌词行颜色设置为红色 */
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 28rpx;
+  margin: 0 30rpx;
+}
+
+.slider {
+  margin: 10rpx;
+}
+
+.option {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.btn-mode,
+.btn-music {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-prev,
+.btn-next {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-pause {
+  /* outline: solid 1px red; */
+  text-align: center;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.lyric {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+
+.lyricFaBox {
+  width: 90vw;
+  height: 90vh;
+  /* outline: 1px solid red; */
+  overflow-x: hidden;
+  padding: 40rpx 0rpx 40rpx 0rpx;
+}
+
+.lysonbox {
+  margin: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.lycolor {
+  color: rgb(173, 173, 173);
+}
+
+.lycolor_cont {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 34rpx;
+}

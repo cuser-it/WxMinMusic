@@ -1,0 +1,196 @@
+.bg {
+  background-color: white;
+  border-radius: 25rpx;
+  margin: 20rpx 0rpx;
+}
+page {
+  background-color: #efefef;
+}
+page .fa_box {
+  width: 95vw;
+  margin: auto;
+}
+page .fa_box .userinfo {
+  padding-top: 60rpx;
+}
+page .fa_box .userinfo .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200rpx;
+  position: relative;
+  margin-top: 40rpx;
+}
+page .fa_box .userinfo .info .img_box {
+  width: 120rpx;
+  display: flex;
+  justify-content: center;
+}
+page .fa_box .userinfo .info .img_box .img {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: -80rpx;
+  border-radius: 50%;
+}
+page .fa_box .userinfo .info .userName {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 80rpx;
+  font-size: 36rpx;
+}
+page .fa_box .userinfo .info .Grade {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+page .fa_box .userinfo .info .Grade .s1 {
+  padding: 0rpx 20rpx 20rpx 20rpx;
+  color: #7e7e7e;
+}
+page .fa_box .userinfo .info .Grade .s1:nth-child(2) {
+  border-left: 1px solid #dbdbdb5d;
+  border-right: 1px solid #dbdbdb5d;
+}
+page .fa_box .icon_cont {
+  outline: 1px solid greenf;
+  display: flex;
+  justify-content: space-around;
+}
+page .fa_box .icon_cont .cont {
+  padding: 40rpx 10rpx;
+  width: 120rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+page .fa_box .icon_cont .cont .img {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  background-color: #ffc7c7;
+}
+page .fa_box .icon_cont .cont .text {
+  color: #707070;
+  font-size: 24rpx;
+  width: 100%;
+  text-align: center;
+  padding: 15rpx 0rpx 0rpx 0rpx;
+}
+page .fa_box .my_like {
+  display: flex;
+  justify-content: space-between;
+}
+page .fa_box .my_like .box1 {
+  display: flex;
+  align-items: center;
+  margin: 20rpx 40rpx;
+}
+page .fa_box .my_like .box1 .img_box {
+  position: relative;
+}
+page .fa_box .my_like .box1 .img_box .img_like {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40rpx, -25rpx);
+  width: 50rpx;
+  height: 50rpx;
+}
+page .fa_box .my_like .box1 .img_box .img_h {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #efefef;
+  border-radius: 25rpx;
+  margin: 0rpx 30rpx 0rpx 0rpx;
+}
+page .fa_box .my_like .box1 .text {
+  font-size: 28rpx;
+}
+page .fa_box .my_like .box1 .text .s2 {
+  font-size: 22rpx;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+page .fa_box .my_like .box1 .text .s2 .img {
+  width: 24rpx;
+  height: 24rpx;
+}
+page .fa_box .my_like .box1 .like_s {
+  display: flex;
+  align-items: center;
+  padding: 6rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 50rpx;
+  font-size: 20rpx;
+}
+page .fa_box .my_like .box1 .like_s .img {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 6rpx;
+}
+page .fa_box .my_like .box1 .like_s .sts {
+  margin-right: 10rpx;
+}
+page .fa_box .List_songs {
+  overflow: hidden;
+  padding: 0rpx 30rpx 30rpx 30rpx;
+}
+page .fa_box .List_songs .text_top {
+  display: flex;
+  padding: 20rpx 0rpx;
+  justify-content: space-between;
+  align-items: center;
+  color: #707070;
+}
+page .fa_box .List_songs .text_top .text {
+  font-size: 22rpx;
+}
+page .fa_box .List_songs .list_s {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0rpx;
+  border-top: 1px solid #f5f5f5;
+}
+page .fa_box .List_songs .list_s .img_box {
+  display: flex;
+}
+page .fa_box .List_songs .list_s .img_box .t_img {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #f8f8f8;
+  border-radius: 15rpx;
+}
+page .fa_box .List_songs .list_s .img_box .s_text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 20rpx;
+}
+page .fa_box .List_songs .list_s .img_box .s_text .s1 {
+  width: 100%;
+  font-size: 26rpx;
+}
+page .fa_box .List_songs .list_s .img_box .s_text .s2 {
+  font-size: 22rpx;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+page .fa_box .List_songs .list_s .img_box .s_text .s2 .img {
+  width: 24rpx;
+  height: 24rpx;
+}
+page .fa_box .List_songs .list_s .list_icon .img {
+  width: 30rpx;
+  height: 30rpx;
+}
+page .fa_box .newinput {
+  padding: 30rpx 0rpx;
+}

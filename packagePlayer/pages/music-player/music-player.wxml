@@ -1,0 +1,110 @@
+<!--pages/music-player/music-player.wxml-->
+<wxs src="/utils/format.wxs" module="fmt" />
+<!-- 背景 -->
+<image class="bg-image" src="{{fmt.formatImage(currentSong.al.picUrl)}}" mode="aspectFill" />
+<view class="bg-cover"></view>
+
+<!-- 自定义导航栏 -->
+<nav-bar bind:leftclick="onNavBackTap">
+  <view class="tabs" slot="center">
+    <block wx:for="{{pageTitles}}" wx:key="*this">
+      <view class=" item {{ currentPage === index ? 'active' :''}}" bindtap="onNavTabItemTap" data-index="{{index}}">
+        {{item}}
+      </view>
+      <view class="divder" wx:if="{{index !== pageTitles.length-1}}">|</view>
+    </block>
+  </view>
+</nav-bar>
+
+<swiper style="height: {{contentHeight}}px;" bindchange="onSwiperChange" current="{{currentPage}}">
+  <swiper-item class="music">
+    <view class="album">
+      <image class="image" src="{{fmt.formatImage(currentSong.al.picUrl)}}" mode="widthFix" />
+    </view>
+    <view class="info">
+      <view class="name">{{currentSong.name}}</view>
+      <view class="singer">{{fmt.formatName(currentSong.ar)}}</view>
+    </view>
+    <view class="lyric">
+      {{currentLyricText}}
+    </view>
+    <view class="progress">
+      <slider class="slider" block-size="12" value="{{sliderValue}}" bindchange="onSliderChange"  bindchanging="onSliderChanging"/>
+      <view class="time">
+        <view class="current">{{fmt.formatTime(currentTime)}}</view>
+        <view class="duration">{{fmt.formatTime(durationTime)}}</view>
+      </view>
+    </view>
+    <view class="controls">
+      <image class="btn mode" src="/packagePlayer/assets/images/player/play_{{playModeName}}.png"  bindtap="onModeBtnTap"/>
+      <image class="btn prev" src="/packagePlayer/assets/images/player/play_prev.png" bindtap="onPrevBtnTap" />
+      <image class="btn play" src="/packagePlayer/assets/images/player/play_{{ isPlaying ? 'pause': 'resume' }}.png" bindtap="onPlayOrPauseTap" />
+      <image class="btn next" src="/packagePlayer/assets/images/player/play_next.png" bindtap="onNextBtnTap"/>
+      <image class="btn list" src="/packagePlayer/assets/images/player/play_music.png" bindtap="onPlaylistBtnTap"/>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view 
+    class="lyric-list"
+     scroll-y
+     scroll-top="{{lyricScrollTop}}"
+     scroll-with-animation
+     bindtouchstart="onLyricTouchStart"
+     bindtouchmove="onLyricTouchMove"
+     bindtouchend="onLyricTouchEnd"
+     >
+
+      <block wx:for="{{lyricInfos}}" wx:key="time">
+        <view 
+          class="item {{currentLyricIndex === index ? 'active':''}}" 
+          bindtap="onLyricTap"
+          data-index="{{index}}"
+          data-time="{{item.time}}"
+          style="padding-top: {{index === 0 ? (contentHeight/2-100):0}}px; padding-bottom: {{index === lyricInfos.length-1 ? (contentHeight/2+100) :0 }}px;">
+          {{item.text}}
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+<!-- 播放列表弹窗 -->
+<view class="playlist-wrapper {{ showPlaylist ? 'show' : '' }}" bindtap="onClosePlaylistTap">
+  <view class="playlist-content" catchtap="stopProp">
+    <view class="header">
+      <text class="title">播放列表 ({{playlistTotalCount}})</text>
+      <view class="close-btn" bindtap="onClosePlaylistTap">×</view>
+    </view>
+    <scroll-view 
+      scroll-y 
+      class="list-scroll"
+      bindscrolltolower="onScrollToLower"
+      lower-threshold="300"
+      scroll-into-view="{{scrollToSongId}}"
+      scroll-with-animation>
+      <block wx:for="{{displayedSongList}}" wx:key="id">
+        <view 
+          id="song-{{item.id}}"
+          class="list-item {{ currentSong.id === item.id ? 'active' : '' }}" 
+          bindtap="onPlaySongTap" 
+          data-index="{{index}}">
+          <view class="song-info">
+            <text class="song-name">{{item.name}}</text>
+            <text class="singer-name"> - {{fmt.formatName(item.ar || item.artists || (item.song && item.song.artists))}}</text>
+          </view>
+          <image wx:if="{{currentSong.id === item.id}}" class="playing-icon" src="/packagePlayer/assets/images/player/play_music.png" />
+        </view>
+      </block>
+      
+      <!-- Loading indicator -->
+      <view wx:if="{{isLoadingMore}}" class="loading-more">
+        <text>加载中...</text>
+      </view>
+      
+      <!-- End message -->
+      <view wx:if="{{!hasMoreData && displayedSongList.length > 0}}" class="no-more-data">
+        <text>没有更多数据了</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

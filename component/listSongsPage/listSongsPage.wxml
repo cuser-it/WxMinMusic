@@ -1,0 +1,106 @@
+<wxs src="/utils/format.wxs" module="fmt" />
+<view wx:if="{{isLoaded}}" class="FFAA">
+  <!-- 整个页面使用一个scroll-view -->
+  <scroll-view 
+    scroll-y 
+    class="page-scroll"
+    bindscrolltolower="onScrollToLower"
+    lower-threshold="300"
+    style="height: 100vh;">
+    
+    <!-- 歌单头部信息 -->
+    <view class="fa_BOX">
+      <view class="fa_box">
+        <view class="song_img_box">
+          <view class="img_box">
+            <!-- 歌单封面 -->
+            <image class="img" src="{{fmt.formatImage(playlist.coverImgUrl)}}" mode="aspectFill" />
+            <view class="Play_Count">
+              <!-- 播放次数 -->
+              <van-icon name="play" />{{fmt.formatCount(playlist.playCount)}}
+            </view>
+          </view>
+          <view class="text">
+            <view>
+              <!-- 歌单名 -->
+              {{playlist.name}}
+            </view>
+            <view class="s1">
+              <!-- 此歌单用户头像 -->
+              <image style="width: 30rpx;height: 30rpx;" src="{{fmt.formatImage(playlist.creator.avatarUrl)}}" mode="aspectFill" />
+              <!-- 此歌单用户名 -->
+              <text style="padding: 4rpx;">{{playlist.creator.nickname}}</text>
+              <van-icon name="arrow" />
+            </view>
+          </view>
+        </view>
+
+        <view class="fa_text">
+          <view class="textVal">
+            <!-- 判断为空返回编辑信息 -->
+            <van-notice-bar color="#e2e2e2" background="#e2e2e200" text="{{playlist.description}}" />
+          </view>
+          <view class="icon">
+          </view>
+        </view>
+        <view class="icon_cont">
+          <view class="icon_box">
+            <van-icon name="share" />分享
+          </view>
+          <!-- <view class="icon_box">
+            <van-icon name="star" />收藏
+          </view> -->
+        </view>
+      </view>
+      <image src="{{fmt.formatImage(playlist.coverImgUrl)}}" mode="widthFix" style="width: 100%;filter: blur(24rpx);background: rgba(0, 0, 0, 0.11);position: absolute;margin: -360rpx 0rpx 0rpx -20rpx;z-index: -1;outline: 1px solid red;" />
+    </view>
+    
+    <!-- 歌曲列表区域 -->
+    <view class="fa_box2">
+      <view class="top_box">
+        <view class="icons">
+          <van-icon class="icon" name="play-circle" />
+          <text class="text">全部播放</text>总计 {{playlist.trackCount}} 首
+        </view>
+      </view>
+
+      <!-- 歌曲列表 -->
+      <view class="song_List" wx:for="{{displayedTracks}}" bind:tap="ck1" data-id="{{item}}" wx:key="id">
+        <view class="r_box">
+          <view class="oneList">
+            {{index+1}}
+          </view>
+          <view class="list_neme">
+            <view class="song_name">
+              {{item.name}}
+            </view>
+            <view class="singer">
+              <!-- <van-icon style="padding: 0rpx 6rpx;" wx:if="{{1==1}}" color='red' name="like" /> -->
+              <!-- <text wx:if="{{1==1}}" class="s1">原唱</text> -->
+              <text wx:if="{{item.fee==0}}" style="border:1rpx solid #838383;color: rgb(128, 128, 128);" class="ss1">免费 可能没版权</text>
+              <text wx:if="{{item.fee==1}}" class="ss1">没VIP照样听</text>
+              <text wx:if="{{item.fee==4}}" style="border:1rpx solid  #ca1010;color: #ca1010;" class="ss1">专辑</text>
+              <text wx:if="{{item.fee==8}}" style="border:1rpx solid rgb(23, 173, 9);color: rgb(23, 173, 9);" class="ss1">免费</text>
+
+              <text class="s2">{{fmt.formatName(item.ar)}}</text>
+              <text class="s3">-{{item.al.name}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+      <!-- Loading indicator -->
+      <view wx:if="{{isLoadingMore}}" class="loading-more">
+        <text class="text">加载中...</text>
+      </view>
+      
+      <!-- End message -->
+      <view wx:if="{{!hasMoreData && displayedTracks.length > 0}}" class="no-more-data">
+        <text class="text">没有更多数据了</text>
+      </view>
+      
+      <!-- 底部占位，避免被底部导航遮挡 -->
+      <view style="height: 150rpx;"></view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,124 @@
+.fa_box {
+  width: 95vw;
+  // outline: 1px solid red;
+  margin: auto;
+
+  .inputClass {
+    color: rgb(255, 168, 183);
+    font-size: 28rpx;
+  }
+
+  .search_box {
+    margin-top: 10rpx;
+    // outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    height: 70rpx;
+    background: linear-gradient(to right, #e7e8ff, #ffe6fa);
+    border-radius: 50rpx;
+    color: rgb(226, 113, 113);
+
+    .search_input {
+      // outline: 1px solid red;
+      width: 76%;
+    }
+
+    .ck_box {
+      font-family: 'STHeiti';
+      color: #7232dd;
+      padding: 10rpx;
+    }
+
+    .search_input_pl {
+      color: rgb(202, 179, 194);
+    }
+
+    .icon {
+      padding: 20rpx;
+    }
+  }
+
+  .h_text {
+    width: 150rpx;
+    padding: 20rpx 0rpx 10rpx 0rpx;
+    font-weight: 200;
+    font-size: 24rpx;
+    // outline: 1px solid red;
+  }
+
+  .song_List {
+    // outline: 1px solid red;
+    border-top: 1rpx solid rgb(204, 204, 204);
+    // height: 90rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .list_neme {
+
+      .song_name {
+        color: black;
+        font-size: 28rpx;
+        padding: 4rpx 10rpx;
+      }
+
+      .singer {
+        font-size: 20rpx;
+        color: rgb(146, 146, 146);
+        padding: 4rpx 10rpx;
+        display: flex;
+        align-items: center;
+
+        .s1,
+        .ss1 {
+          font-size: 14rpx;
+          padding: 2rpx 4rpx;
+          border-radius: 4rpx;
+          margin: 2rpx;
+        }
+
+        .s1 {
+          color: white;
+          background-color: #CC463D;
+        }
+
+        .ss1 {
+          color: #F5BD00;
+          border: 1rpx solid #F5BD00;
+        }
+      }
+
+      .Shakelight {
+        padding: 4rpx 10rpx;
+        font-size: 20rpx;
+        color: rgb(146, 146, 146);
+
+        .s1 {
+          padding: 0rpx 6rpx;
+          background-color: rgb(255, 236, 223);
+          color: rgb(238, 144, 36);
+          border-radius: 8rpx;
+          font-size: 18rpx;
+          margin-right: 10rpxfs;
+        }
+      }
+    }
+
+    .list_icon {
+      padding: 20rpx;
+      color: rgb(209, 207, 207);
+    }
+  }
+
+
+  .van-enter-active-class,
+  .van-leave-active-class {
+    transition-property: background-color, transform;
+  }
+
+  .van-enter-class,
+  .van-leave-to-class {
+    background-color: red;
+    transform: rotate(-360deg) translate3d(-100%, -100%, 0);
+  }
+}
