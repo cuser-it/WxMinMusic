@@ -44,10 +44,10 @@
       <td align="center">
         <img src="https://github.com/user-attachments/assets/b4c08cbc-ee05-440f-adda-f432be0d65f1" width="250"/>
       </td>
-      <td>
+      <td align="center">
         <img src="https://github.com/user-attachments/assets/0198d778-bbf9-45fb-91d8-b66994d60779" />
       </td>
-      <td>
+      <td align="center">
         <img src="https://github.com/user-attachments/assets/e9eaffaa-1b4a-4ff0-9f7b-f1f78d323a95" />
       </td>
     </tr>
