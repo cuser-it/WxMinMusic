@@ -222,7 +222,7 @@ export const baseURL = "http://127.0.0.1:3000"
 ```json
 // app.json
 {
-  "appid": "wx427c5808091313e0",
+  "appid": "wx888888888888888e0",
   "projectname": "音乐纯享版"
 }
 ```
