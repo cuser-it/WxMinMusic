@@ -215,7 +215,7 @@ npm install
 #### API 配置
 ```javascript
 // services/request/config.js
-export const baseURL = "http://150.158.43.187:3000"
+export const baseURL = "http://127.0.0.1:3000"
 ```
 
 #### 小程序配置
